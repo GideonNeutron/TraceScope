@@ -1,6 +1,6 @@
 # TraceScope
 
-An **AI-assisted C++17 performance-instrumentation prototype**, created November 4, 2026. This is an educational prototype. The initial implementation, tests, and measurements were produced with AI assistance. It demonstrates instrumented CPU scopes, bounded storage, and reproducible measurement.
+An **AI-assisted C++17 performance-instrumentation project**. It demonstrates instrumented CPU scopes, bounded storage, and reproducible measurement.
 
 ## What runs
 
@@ -55,16 +55,6 @@ g++ -std=c++17 -O1 -g -fsanitize=address,undefined \
 ASAN_OPTIONS=detect_leaks=0 ./build/tests_sanitized
 ```
 
-## Interview walkthrough
-
-1. Explain why `steady_clock` is appropriate for elapsed time.
-2. Trace the ring index after five writes to capacity three.
-3. Explain why each write needs synchronization and where contention occurs.
-4. Explain bounded event storage versus the allocating export path.
-5. Distinguish manual instrumentation from sampling and hardware profiling.
-6. Reproduce the benchmark, inspect all nine samples, and explain its limitations.
-7. Consider improvements: per-thread buffers, capture enable/disable, asynchronous export, thread metadata, and a visual viewer. These are future work, not implemented features.
-
 ## Files
 
 - `tracescope.hpp`: recorder and RAII scope timer.
@@ -75,5 +65,3 @@ ASAN_OPTIONS=detect_leaks=0 ./build/tests_sanitized
 - `report.py`: benchmark environment/report generation.
 - `BENCHMARK.md`, `benchmark.csv`, `benchmark_summary.json`: archived measurements.
 - `results/`: generated outputs when the build script is run.
-
-This prototype includes source, reproducible commands, raw measurements, and explicit limits so readers can inspect the work and repeat the experiment.
