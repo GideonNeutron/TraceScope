@@ -1,0 +1,18 @@
+{
+  "operationsPerRound": 200000,
+  "rounds": 9,
+  "baselineMedianNs": 6.189,
+  "instrumentedMedianNs": 71.92,
+  "incrementalMedianNs": 65.731,
+  "eventSizeBytes": 72,
+  "capacity": 4096,
+  "eventStorageBytes": 294912,
+  "environment": {
+    "date": "2026-11-04T13:06:25.845369+00:00",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "flags": "-std=c++17 -O2 -pthread",
+    "logicalCpuCount": 9
+  }
+}
